@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Card } from "../../components/Card";
 import { LayoutDefault } from "../../components/Layout";
+import { Pagination } from "../../components/Pagination";
 import { Container, Content, Products } from "../../styles/align";
 import { NavHeading, NavItem } from "../../styles/pages/our-products";
 
@@ -104,6 +105,7 @@ export default function OurProduct() {
               />
             ))}
           </Products>
+          <Pagination />
         </Content>
       </Container>
     </LayoutDefault>
