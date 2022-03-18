@@ -21,18 +21,13 @@ export function Header() {
       <RightDiv>
         <MenuList>
           <MenuItem>
-            <Link href="#" passHref>
+            <Link href="/" passHref>
               <MenuLink>Home</MenuLink>
             </Link>
           </MenuItem>
           <MenuItem>
             <Link href="#" passHref>
               <MenuLink>Our Products</MenuLink>
-            </Link>
-          </MenuItem>
-          <MenuItem>
-            <Link href="#" passHref>
-              <MenuLink>Contact Us</MenuLink>
             </Link>
           </MenuItem>
         </MenuList>

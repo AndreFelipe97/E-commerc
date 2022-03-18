@@ -1,13 +1,8 @@
 import Link from "next/link";
 
 import { Card } from "../../components/Card";
-import {
-  Container,
-  Contant,
-  Products,
-  SectionHeading,
-  Title,
-} from "../../styles/pages/home";
+import { Container, Contant, Products } from "../../styles/pages/home";
+import { SectionHeading, Title } from "../../styles/typography";
 
 export default function Home() {
   return (

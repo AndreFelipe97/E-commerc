@@ -54,7 +54,7 @@ export const MenuItem = styled.li`
   &.active::before {
     transform: scaleX(1);
     border-bottom: 3px solid var(--color-primary-red);
-    padding: 2.3rem;
+    padding: 2.28rem;
     width: 100%;
   }
 
@@ -85,6 +85,30 @@ export const Cart = styled.div`
   justify-content: center;
   align-items: center;
 
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    transform: scaleX(0);
+    transition: all 0.5s;
+  }
+
+  &:hover::before,
+  &.active::before {
+    transform: scaleX(1);
+    border-bottom: 3px solid var(--color-primary-red);
+    padding: 3.8rem;
+    width: 100%;
+  }
+
+  &:active::before {
+    border-bottom: 1px solid var(--color-primary-red);
+  }
+
   svg {
     color: var(--color-white);
     height: 2.5rem;
@@ -99,7 +123,7 @@ export const Cart = styled.div`
     background-color: var(--color-primary-red);
     color: var(--color-white);
     position: absolute;
-    top: 1.8rem;
+    top: -1rem;
     margin-left: 2.5rem;
     display: flex;
     justify-content: center;
