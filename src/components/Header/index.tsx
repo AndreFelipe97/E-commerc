@@ -26,7 +26,7 @@ export function Header() {
             </Link>
           </MenuItem>
           <MenuItem>
-            <Link href="#" passHref>
+            <Link href="/our-products" passHref>
               <MenuLink>Our Products</MenuLink>
             </Link>
           </MenuItem>

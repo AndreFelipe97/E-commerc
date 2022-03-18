@@ -1,17 +1,17 @@
 import Link from "next/link";
 
 import { Card } from "../../components/Card";
-import { Container, Contant, Products } from "../../styles/pages/home";
+import { Container, Content, Products } from "../../styles/align";
 import { SectionHeading, Title } from "../../styles/typography";
 
 export default function Home() {
   return (
     <Container>
-      <Contant>
+      <Content>
         <SectionHeading>
           <Title>Latest Products</Title>
-          <Link href="#" passHref>
-            <a href="#">View all products &gt;</a>
+          <Link href="/our-products" passHref>
+            <a>View all products &gt;</a>
           </Link>
         </SectionHeading>
         <Products>
@@ -52,7 +52,7 @@ export default function Home() {
             amountReview="32"
           />
         </Products>
-      </Contant>
+      </Content>
     </Container>
   );
 }
