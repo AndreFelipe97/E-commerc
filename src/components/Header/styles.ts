@@ -81,6 +81,10 @@ export const MenuLink = styled.button`
 `;
 
 export const Cart = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   svg {
     color: var(--color-white);
     height: 2.5rem;
@@ -95,8 +99,8 @@ export const Cart = styled.div`
     background-color: var(--color-primary-red);
     color: var(--color-white);
     position: absolute;
-    top: 1.5rem;
-    margin-left: 2rem;
+    top: 1.8rem;
+    margin-left: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;

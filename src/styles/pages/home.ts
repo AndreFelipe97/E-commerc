@@ -35,6 +35,5 @@ export const Title = styled.h1`
 
 export const Products = styled.div`
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 `;

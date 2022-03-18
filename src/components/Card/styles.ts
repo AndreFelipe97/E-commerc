@@ -5,7 +5,7 @@ export const Card = styled.div`
   -moz-perspective: 150rem;
   position: relative;
   height: 52rem;
-  flex: 0 0 31%;
+  flex: 0 0 35rem;
 
   margin: 1rem;
 
