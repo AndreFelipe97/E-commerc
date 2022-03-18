@@ -24,13 +24,6 @@ export const RightDiv = styled.div`
   display: flex;
   justify-content: space-between;
   flex: 0 0 30%;
-
-  svg {
-    color: var(--color-white);
-    height: 2.5rem;
-    width: 2.5rem;
-    right: 0;
-  }
 `;
 
 export const MenuList = styled.ul`
@@ -85,4 +78,27 @@ export const MenuLink = styled.button`
     align-items: center !important;
     background-color: transparent;
     border: none;
+`;
+
+export const Cart = styled.div`
+  svg {
+    color: var(--color-white);
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  span {
+    font-size: 0.8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: var(--color-primary-red);
+    color: var(--color-white);
+    position: absolute;
+    top: 1.5rem;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;

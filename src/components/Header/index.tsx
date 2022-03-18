@@ -9,6 +9,7 @@ import {
   MenuList,
   MenuItem,
   MenuLink,
+  Cart,
 } from "./styles";
 
 export function Header() {
@@ -35,7 +36,10 @@ export function Header() {
             </Link>
           </MenuItem>
         </MenuList>
-        <FaShoppingCart />
+        <Cart>
+          <FaShoppingCart />
+          <span>13</span>
+        </Cart>
       </RightDiv>
     </StyledHeader>
   );
