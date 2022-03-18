@@ -20,6 +20,7 @@ export const NavItem = styled.button`
   display: inline-block;
   transition: all .3s;
   cursor: pointer;
+  font-family: 'Poppins', sans-serif;
 
   &:not(:last-child) {
     margin-right: 2rem;

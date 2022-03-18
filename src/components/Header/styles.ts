@@ -78,6 +78,8 @@ export const MenuLink = styled.button`
     align-items: center !important;
     background-color: transparent;
     border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 `;
 
 export const Cart = styled.div`
