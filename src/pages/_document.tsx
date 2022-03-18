@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: any) {
@@ -16,7 +16,6 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
           />
-          <title>Hundred Clothing</title>
         </Head>
         <body>
           <Main />
