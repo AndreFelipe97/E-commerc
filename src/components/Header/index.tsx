@@ -31,10 +31,12 @@ export function Header() {
             </Link>
           </MenuItem>
         </MenuList>
-        <Cart>
-          <FaShoppingCart />
-          <span>13</span>
-        </Cart>
+        <Link href="/cart" passHref>
+          <Cart>
+            <FaShoppingCart />
+            <span>13</span>
+          </Cart>
+        </Link>
       </RightDiv>
     </StyledHeader>
   );

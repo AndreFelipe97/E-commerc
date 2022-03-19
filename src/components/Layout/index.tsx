@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { ReactNode } from "react";
+import { Container, Content } from "src/styles/align";
 import { Banner } from "../Benner";
 import { Footer } from "../Footer";
 import { Header } from "../Header";
@@ -17,7 +18,9 @@ export function LayoutDefault({ title, children }: LayoutDefaultProps) {
       </Head>
       <Header />
       <Banner />
-      {children}
+      <Container>
+        <Content>{children}</Content>
+      </Container>
       <Footer />
     </>
   );

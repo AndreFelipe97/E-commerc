@@ -82,10 +82,11 @@ export const MenuLink = styled.button`
     font-family: 'Poppins', sans-serif;
 `;
 
-export const Cart = styled.div`
+export const Cart = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   svg {
     color: var(--color-white);

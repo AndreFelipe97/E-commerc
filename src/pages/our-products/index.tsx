@@ -1,9 +1,10 @@
+import type { NextPage } from "next";
 import { useState } from "react";
-import { Card } from "../../components/Card";
-import { LayoutDefault } from "../../components/Layout";
-import { Pagination } from "../../components/Pagination";
-import { Container, Content, Products } from "../../styles/align";
-import { NavHeading, NavItem } from "../../styles/pages/our-products";
+import { Card } from "src/components/Card";
+import { LayoutDefault } from "src/components/Layout";
+import { Pagination } from "src/components/Pagination";
+import { Container, Content, Products } from "src/styles/align";
+import { NavHeading, NavItem } from "./our-products.module";
 
 type ProductProps = {
   imagePath: string;
@@ -11,7 +12,8 @@ type ProductProps = {
   amountReview: string;
   type: string;
 };
-export default function OurProduct() {
+
+const OurProduct: NextPage = () => {
   const productsAll = [
     {
       imagePath: "./assets/img/product_01.jpg",
@@ -79,35 +81,29 @@ export default function OurProduct() {
 
   return (
     <LayoutDefault title="HundredClothing|Our Products">
-      <Container>
-        <Content>
-          <NavHeading>
-            <NavItem onClick={() => handlteType("allProducts")}>
-              all products
-            </NavItem>
-            <NavItem onClick={() => handlteType("featured")}>featured</NavItem>
-            <NavItem onClick={() => handlteType("flashDeals")}>
-              flash deals
-            </NavItem>
-            <NavItem onClick={() => handlteType("lastMinute")}>
-              last minute
-            </NavItem>
-          </NavHeading>
+      <NavHeading>
+        <NavItem onClick={() => handlteType("allProducts")}>
+          all products
+        </NavItem>
+        <NavItem onClick={() => handlteType("featured")}>featured</NavItem>
+        <NavItem onClick={() => handlteType("flashDeals")}>flash deals</NavItem>
+        <NavItem onClick={() => handlteType("lastMinute")}>last minute</NavItem>
+      </NavHeading>
 
-          <Products>
-            {products.map((product: ProductProps, index) => (
-              <Card
-                key={String(index + 1)}
-                title="title goes here"
-                imagePath={product.imagePath}
-                price={product.price}
-                amountReview={product.amountReview}
-              />
-            ))}
-          </Products>
-          <Pagination />
-        </Content>
-      </Container>
+      <Products>
+        {products.map((product: ProductProps, index) => (
+          <Card
+            key={String(index + 1)}
+            title="title goes here"
+            imagePath={product.imagePath}
+            price={product.price}
+            amountReview={product.amountReview}
+          />
+        ))}
+      </Products>
+      <Pagination />
     </LayoutDefault>
   );
-}
+};
+
+export default OurProduct;
