@@ -6,14 +6,6 @@ export const SectionHeading = styled.div`
   margin-top: 10rem;
   margin-bottom: 6rem;
   border-bottom: 1px solid var(--color-grey);
-
-  a {
-    margin-top: 0.5rem;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--color-primary-red);
-  }
 `;
 
 export const Title = styled.h1`

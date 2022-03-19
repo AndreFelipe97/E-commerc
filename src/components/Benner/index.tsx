@@ -1,5 +1,6 @@
-import { Slide } from 'react-slideshow-image';
-import { EachSlide } from './styles';
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+import { EachSlide } from "./styles";
 
 export function Banner() {
   return (

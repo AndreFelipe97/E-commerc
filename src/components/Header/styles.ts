@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
-  background-color: #232323;
+  background-color: var(--color-black-3);
   min-height: 8rem;
   display: flex;
   align-items: center;
@@ -87,30 +87,6 @@ export const Cart = styled.div`
   justify-content: center;
   align-items: center;
 
-  position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 3px;
-    transform: scaleX(0);
-    transition: all 0.5s;
-  }
-
-  &:hover::before,
-  &.active::before {
-    transform: scaleX(1);
-    border-bottom: 3px solid var(--color-primary-red);
-    padding: 3.8rem;
-    width: 100%;
-  }
-
-  &:active::before {
-    border-bottom: 1px solid var(--color-primary-red);
-  }
-
   svg {
     color: var(--color-white);
     height: 2.5rem;
@@ -125,10 +101,21 @@ export const Cart = styled.div`
     background-color: var(--color-primary-red);
     color: var(--color-white);
     position: absolute;
-    top: -1rem;
+    top: 1.7rem;
     margin-left: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  &:hover {
+    svg {
+      color: var(--color-primary-red);
+    }
+
+    span {
+      background-color: var(--color-white);
+      color: var(--color-primary-red);
+    }
   }
 `;

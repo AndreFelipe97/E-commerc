@@ -1,8 +1,8 @@
 import Link from "next/link";
-
-import { Card } from "../../components/Card";
-import { Container, Content, Products } from "../../styles/align";
-import { SectionHeading, Title } from "../../styles/typography";
+import { Card } from "src/components/Card";
+import { Container, Content, Products } from "src/styles/align";
+import { ButtonLink } from "src/styles/pages/home";
+import { SectionHeading, Title } from "src/styles/typography";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         <SectionHeading>
           <Title>Latest Products</Title>
           <Link href="/our-products" passHref>
-            <a>View all products &gt;</a>
+            <ButtonLink>View all products &gt;</ButtonLink>
           </Link>
         </SectionHeading>
         <Products>
