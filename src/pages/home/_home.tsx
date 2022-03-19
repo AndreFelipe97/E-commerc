@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { Card } from "src/components/Card";
-import { Container, Content, Products } from "src/styles/align";
+import { Products } from "src/styles/align";
 import { SectionHeading, Title } from "src/styles/typography";
-import { ButtonLink } from "./home.module";
+import { ButtonLink } from "src/styles/pages/home.module";
 
 export default function Home() {
   return (

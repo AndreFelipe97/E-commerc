@@ -10,7 +10,7 @@ import {
   ProductImage,
   ProductsCart,
   ProductTitle,
-} from "./cart.module";
+} from "src/styles/pages/cart.module";
 
 const Cart: NextPage = () => {
   const [amount, setAmount] = useState(0);

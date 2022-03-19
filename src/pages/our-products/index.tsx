@@ -3,8 +3,8 @@ import { useState } from "react";
 import { Card } from "src/components/Card";
 import { LayoutDefault } from "src/components/Layout";
 import { Pagination } from "src/components/Pagination";
-import { Container, Content, Products } from "src/styles/align";
-import { NavHeading, NavItem } from "./our-products.module";
+import { Products } from "src/styles/align";
+import { NavHeading, NavItem } from "src/styles/pages/our-products.module";
 
 type ProductProps = {
   imagePath: string;
