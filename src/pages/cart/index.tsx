@@ -20,7 +20,7 @@ const Cart: NextPage = () => {
   }
 
   function handleRemove() {
-    setAmount(amount - 1);
+    setAmount(amount !== 0 ? amount - 1 : amount);
   }
 
   return (
@@ -31,12 +31,12 @@ const Cart: NextPage = () => {
       <ProductsCart>
         <ProductImage src="/assets/img/product_01.jpg" alt="product 1" />
         <ProductTitle>title goes here</ProductTitle>
-        <AmountButton type="button" onClick={handleAdd}>
-          <FaPlus />
-        </AmountButton>
-        <Amount>{amount}</Amount>
         <AmountButton type="button" onClick={handleRemove}>
           <FaMinus />
+        </AmountButton>
+        <Amount>{amount}</Amount>
+        <AmountButton type="button" onClick={handleAdd}>
+          <FaPlus />
         </AmountButton>
       </ProductsCart>
     </LayoutDefault>
