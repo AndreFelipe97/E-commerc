@@ -33,4 +33,8 @@ export const NavItem = styled.button`
   &:focus {
     color: var(--color-primary-red);
   }
+
+  @media only screen and (max-width: 37.5em)  {
+    font-size: 1rem;
+  }
 `;

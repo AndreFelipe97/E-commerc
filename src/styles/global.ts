@@ -9,6 +9,11 @@ const GlobalStyle = createGlobalStyle`
     --color-black: #1e1e1e;
     --color-black-2: #121212;
     --color-black-3: #232323;
+
+    --bp-phone: 37.5em; // max-width: 37.5em
+    --bp-tab-port: 56.25em; // max-width: 56.25em
+    --bp-tab-land: 75em; // max-width: 75em
+    --bp-big-desktop: 112.5em; // min-width: 112.5em
   }
 
   * {

@@ -44,6 +44,7 @@ export const Card = styled.div`
 
   @media only screen and (max-width: 56.25em) {
     height: auto;
+    width: auto;
     border-radius: 3px;
     background-color: var(--color-white);
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);

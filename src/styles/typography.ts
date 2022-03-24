@@ -13,4 +13,8 @@ export const Title = styled.h1`
   font-weight: 400;
   color: var(--color-black);
   margin-bottom: 1.5rem;
+  
+  @media only screen and (max-width: 56.25em)  {
+    font-size: 1.4rem;
+  }
 `;

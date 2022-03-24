@@ -24,4 +24,14 @@ export const FooterContainer = styled.div`
     color: var(--color-grey-2);
     line-height: 2.4rem;
   }
+
+  @media only screen and (max-width: 56.25em)  {
+    div {
+      flex: 0 0 100%;
+    }
+    
+    p {
+      font-size: 1.4rem;
+    }
+  }
 `;
