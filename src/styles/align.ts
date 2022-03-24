@@ -18,6 +18,10 @@ export const Content = styled.div`
   @media only screen and (max-width: 56.25em)  {
     flex: 0 0 100%;
   }
+
+  @media (min-width: 56.25em) and (max-width: 112.5em)  {
+    flex: 0 0 78%;
+  }
 `;
 
 export const Products = styled.div`
