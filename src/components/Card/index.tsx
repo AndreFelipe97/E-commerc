@@ -1,4 +1,7 @@
-import { FaStar } from 'react-icons/fa';
+import { Dispatch } from "react";
+import { FaStar } from "react-icons/fa";
+import { useDispatch } from "react-redux";
+import { AddCartActions } from "src/store/actions/cartActions";
 
 import {
   Card as Container,
@@ -10,7 +13,7 @@ import {
   PriceOnly,
   PriceValue,
   BtnCard,
-} from './styles';
+} from "./styles";
 
 type CardProps = {
   title: string;
@@ -20,6 +23,12 @@ type CardProps = {
 };
 
 export function Card({ title, imagePath, price, amountReview }: CardProps) {
+  const addCartDispatch = useDispatch<Dispatch<AddCartActions>>();
+
+  const handleAddCart = () => {
+    addCartDispatch({ type: "@ADD_CART" });
+  };
+
   return (
     <Container>
       <div className="card__side card__side--front">
@@ -51,7 +60,7 @@ export function Card({ title, imagePath, price, amountReview }: CardProps) {
             <PriceOnly>Only</PriceOnly>
             <PriceValue>${price}</PriceValue>
           </PriceBox>
-          <BtnCard onClick={() => console.log('Add')} href="#tours">
+          <BtnCard onClick={handleAddCart} href="#tours">
             Add cart!
           </BtnCard>
         </CardCta>
